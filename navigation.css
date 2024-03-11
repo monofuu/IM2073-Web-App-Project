@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeIn_less {
+    0% { opacity: 0; }
+    100% { opacity: 0.8; }
+  }
+
+.bg{
+    background: url("C:/myWebProject/tomcat/webapps/petshop/images/pets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    animation: fadeIn 13s;
+}
+
+.box {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    padding: 16px 10px;
+    top: 0;
+    bottom: 0;
+    left: 20;
+    right: 0;
+    opacity: 0.8;
+    animation: fadeIn_less 13s;
+}
+
+
+.nav{
+    overflow: hidden;
+    background: #EFE8DE;
+    margin-top: -5px;
+}
+
+.nav a{
+    float: left;
+    color: saddlebrown;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    width: 205px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    color:#EFE8DE;
+    background:saddlebrown;
+}
+
+.nav a.active{
+    float: left;
+    background: #EFE8DE;
+    color: saddlebrown;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a.active:hover{
+    color:saddlebrown;
+    background: #EFE8DE;
+}
