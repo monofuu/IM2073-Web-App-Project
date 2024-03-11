@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="petquerystyle.css">
+    <title>Adoption</title>
+</head>
+
+<body>
+    <div class="nav">
+        <a class="active">Animal Adoption Society</a>
+        <a href ="C:/myWebProject/tomcat/webapps/petshop/start.html">Home</a>
+        <a href="#">News</a>
+        <a href="C:/myWebProject/tomcat/webapps/petshop/petquery.html">Adoption</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <div class = "box">
+    <h1>Find Your Perfect Com'paw'nion</h1>
+    <h3><p align = "justify">Discover the joy of companionship by exploring our wide range of adoptable animals!
+        Our form allows you to browse through the profiles of available pets seeking their forever homes.
+        Simply check the boxes and embark on a heartwarming journey to find the perfect furry friend who will bring happiness and unconditional love into your life. 
+        Start the adventure of animal adoption with us today!
+    </p></h3>
+    <br/>
+    <form method="get" action="http://localhost:9999/petshop/petquery">
+    <p><b>Choose your preferred type of pet: </b></p>
+    <p><input type="checkbox" name="type" value="Dog" />Dog</p>
+    <p><input type="checkbox" name="type" value="Cat" />Cat</p>
+    <p><input type="checkbox" name="type" value="Rabbit" />Rabbit</p>
+    <p><input type="checkbox" name="type" value="Hamster" />Hamster</p>
+    <p><input type="checkbox" name="author" value="Bird" />Bird </p>
+    <br/>
+
+    <p><b>Preferred Adoption Fee:</b></p>
+    <p><input type="radio" name="price" value="100" checked/>less than $100</p>
+    <p><input type="radio" name="price" value="200" />less than $200</p>
+    <p><input type="radio" name="price" value="300" />less than $300</p>
+    <br/><br/>
+    <input type="submit" value="Search" />
+    <input type="reset" value="Clear" />
+    <br/><br/>
+    </div>
+    
+    <div class="image"></div>
+</form>
+</body>
+</html>

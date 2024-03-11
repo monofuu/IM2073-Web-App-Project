@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background: #FEFBF6;    
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(300%); /* Start off-screen to the left */
+    }
+    to {
+      transform: translateX(-1%); /* Slide in to the normal position */
+    }
+  }  
+
+.nav{
+    overflow: hidden;
+    background: #F7DED0;
+    margin-top: -5px;
+}
+
+.nav a{
+    float: left;
+    color: saddlebrown;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    width: 178px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    color:#F7DED0;
+    background:saddlebrown;
+}
+
+.nav a.active{
+    float: left;
+    background: #F7DED0;
+    color: saddlebrown;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    width: 230px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav a.active:hover{
+    color:saddlebrown;
+    background: #F7DED0;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    background: url(C:/myWebProject/tomcat/webapps/petshop/images/animals.jpg);
+    background-repeat: no-repeat;
+    padding: 16px 10px;
+    bottom: 0;
+    top: 20;
+    right: 50px;
+    animation: slideIn 1.5s;
+}
+
+.box {
+    width: 1270px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    padding: 10px 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

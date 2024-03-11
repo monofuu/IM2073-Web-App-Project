@@ -32,7 +32,7 @@ header h4{
 
 .intro::before{
     content: "";
-    background-image: url("C:/myWebProject/tomcat/webapps/petshop/dog.jpg");
+    background-image: url("C:/myWebProject/tomcat/webapps/petshop/images/dog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -40,15 +40,17 @@ header h4{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.8;
+    opacity: 1;
+    background-color: black;
 }
 
 .welcome{
     position: absolute;
-    top: 40%;
+    text-align: center;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
 }
 
 .message{

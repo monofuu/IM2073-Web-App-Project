@@ -1,0 +1,51 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@keyframes fadeIn_less {
+    0% { opacity: 0; }
+    100% { opacity: 0.8; }
+  }
+
+@keyframes slideIn {
+    from {
+      transform: translateX(300%); /* Start off-screen to the left */
+    }
+    to {
+      transform: translateX(0); /* Slide in to the normal position */
+    }
+  }  
+
+.bg{
+    background: url("C:/myWebProject/tomcat/webapps/petshop/images/pets.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    animation: fadeIn 8s;
+}
+
+.box {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    padding: 16px 10px;
+    top: 0;
+    bottom: 0;
+    left: 20;
+    right: 0;
+    opacity: 0.8;
+    animation: slideIn 4s;
+}
