@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="wordstyle.css">
-    <link rel="stylesheet" href="background.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="wordstyle.css">
+    <link rel="stylesheet" href="background.css">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    
+    <link rel = "stylesheet" href ="scroll.css">
+    <script defer src = "scollanimate.js"></script>
     <title>Animal Adoption Society</title>
-</head>
+
 <body>
     <div class="intro">
         <h1 class="welcome">
@@ -22,11 +26,12 @@
         <a class="active">Animal Adoption Society</a>
         <a href ="C:/myWebProject/tomcat/webapps/petshop/start.html">Home</a>
         <a href="#">News</a>
+        <a href="C:/myWebProject/tomcat/webapps/petshop/compawnions.html">Our Compawnions</a>
         <a href="C:/myWebProject/tomcat/webapps/petshop/petquery.html">Adoption</a>
         <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
     </div>
-
+  
+    <section class = "hidden">
     <div class ="box">
         <br/>
         <h1><p><b>Choose Adoption Today!</b></p></h1>
@@ -42,10 +47,27 @@
             <br/>
             <p>You can be the one to give them a second chance!</p>
         </h3>
-        
     </div>
+    </section>
+
+    <section class = "hidden">
+        <span class = "bg2"></span>
+        <div class="box2">
+            <h1><p><b>Our Adoption Centre</b></p></h1>
+            <br/><br/>
+            <h3><p align = "justify">At our animal adoption center, we're dedicated to facilitating meaningful connections between individuals and pets. 
+                Our mission is simple: to find forever homes for every furry friend in need.</p>
+                <br/>
+                <p align = "justify">Here, we provide a safe haven for animals of all shapes, sizes, and backgrounds. 
+                Whether they're playful pups, cuddly kittens, or gentle seniors, each animal receives the care, 
+                attention and love they deserve as they wait for their perfect match.</p>
+                <br/>
+            </h3>
+        </div>
+    </section>
 
     <script src="wordanimate.js"></script>
     
 </body>
+
 </html>
