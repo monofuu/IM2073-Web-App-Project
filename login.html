@@ -6,7 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="petquerystyle.css">
+    <link rel="stylesheet" href= "button.css">
     <title>Adoption</title>
+
+    <style> 
+        input[type=button], input[type=submit], input[type=reset] {
+          background-color: #F7DED0;
+          border: none;
+          color: saddlebrown;
+          padding: 5px 10px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
 </head>
 
 <body>
@@ -27,24 +40,20 @@
         Start the adventure of animal adoption with us today!
     </p></h3>
     <br/>
-    <form method="get" action="petquery">
-    <p><b>Choose your preferred type of pet: </b></p>
-    <p><input type="checkbox" name="type" value="Dog" />Dog</p>
-    <p><input type="checkbox" name="type" value="Cat" />Cat</p>
-    <p><input type="checkbox" name="type" value="Rabbit" />Rabbit</p>
-    <p><input type="checkbox" name="type" value="Hamster" />Hamster</p>
-    <p><input type="checkbox" name="type" value="Bird" />Bird </p>
+    <p><h3>But first...we need you to login to our website:</h3></p>
     <br/>
-
-    <p><b>Preferred Adoption Fee:</b></p>
-    <p><input type="radio" name="price" value="100" checked/>less than $100</p>
-    <p><input type="radio" name="price" value="200" />Less than $200</p>
-    <p><input type="radio" name="price" value="300" />Less than $300</p>
-    <p><input type="radio" name="price" value="400" />Less than $400</p>
-    <p><input type="radio" name="price" value="500" />Less than $500</p>
+    <form method="get" action="login">
+    <p>Enter your Name: <input type='text' name='cust_name'></p>
+    <p>Enter your Email: <input type='text' name='cust_email'></p>
+    <p>Enter your Password: <input type='text' name='cust_phone'></p>
+    <button class="button" style="vertical-align:middle"><span><input type="submit" value="Login" /></span></button>
+    </form>
     <br/><br/>
-    <input type="submit" value="Next" />
-    <input type="reset" value="Clear" />
+
+    <p><h3>No account? Click here to sign up now!</h3></p>
+    <form method="get" action="signup"></form>   
+    <input type="reset" value="Sign Up" />
+    </div>
     <br/><br/>
     </div>
     

@@ -24,7 +24,7 @@ body{
   }  
 
 .bg{
-    background: url("C:/myWebProject/tomcat/webapps/petshop/images/pets.jpg");
+    background: url("http://localhost:9999/petdb/images/pets.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -51,7 +51,7 @@ body{
 }
 
 .bg2{
-  background: url("C:/myWebProject/tomcat/webapps/petshop/images/pets2.jpg");
+  background: url("http://localhost:9999/petdb/images/pets2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   top: 700px;

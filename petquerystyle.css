@@ -58,7 +58,7 @@ body{
     height: 300px;
     margin: auto;
     position: absolute;
-    background: url(C:/myWebProject/tomcat/webapps/petshop/images/animals.jpg);
+    background: url("http://localhost:9999/petdb/images/animals.jpg");
     background-repeat: no-repeat;
     padding: 16px 10px;
     bottom: 0;
@@ -78,3 +78,9 @@ body{
     left: 0;
     right: 0;
 }
+
+.box_news {
+    width: 1000px;
+    margin: auto;
+    padding: 10px 10px;
+  }

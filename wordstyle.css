@@ -32,7 +32,7 @@ header h4{
 
 .intro::before{
     content: "";
-    background-image: url("C:/myWebProject/tomcat/webapps/petshop/images/dog.jpg");
+    background-image: url("http://localhost:9999/petdb/images/dog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

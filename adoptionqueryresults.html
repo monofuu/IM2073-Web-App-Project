@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Adoption</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a class="active">Animal Adoption Society</a>
+      <a href ="C:/myWebProject/tomcat/webapps/petdb/start.html">Home</a>
+      <a href="#">News</a>
+      <a href="C:/myWebProject/tomcat/webapps/petdb/petquery.html">Adoption</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+  </div>
+
+  <h1>Thank you for waiting! Here are the pets you might be interested in:</h1>
+  <form method="get" action="http://localhost:9999/petdb/adoptionquery">
+    <b>Choose an author:</b>
+    <p><input type="checkbox" name="id" value="1001" />Tan Ah Teck, Java For Dummies, $11.11 </p>
+    <p><input type="checkbox" name="id" value="1002" />Tan Ah Teck, More Java For Dummies, $22.22 </p>
+    <p><input type="checkbox" name="id" value="1003" />Mohammad Ali, More Java For more dummies, $33.33 </p>
+    <p><input type="checkbox" name="id" value="1004" />Kumar, A Cup of Java, $44.44 </p>
+    <p><input type="checkbox" name="id" value="1005" />Kevin Jones, A Teaspoon of Java, $55.55 </p>
+    <input type="submit" value="Search" />
+  </form>
+</body>
+</html>
