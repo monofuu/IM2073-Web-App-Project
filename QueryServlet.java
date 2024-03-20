@@ -37,7 +37,7 @@ public class QueryServlet extends HttpServlet {
          // Step 3: Execute a SQL SELECT query
          // === Form the SQL command - BEGIN ===
          String sqlStr = "select * from class101 where type = "
-               + "'" + request.getParameter("type") + "'"   // Single-quote SQL string
+               + "'" + request.getParameterValues("type") + "'"   // Single-quote SQL string
                + " and qty > 0 order by price desc";
          // === Form the SQL command - END ===
 
