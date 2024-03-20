@@ -21,7 +21,7 @@ public class QueryServlet extends HttpServlet {
       // Print an HTML page as the output of the query
       out.println("<!DOCTYPE html>");
       out.println("<html>");
-      out.println("<head><title>Query Response</title></head>");
+      out.println("<head><title>Pet Query Response</title></head>");
       out.println("<body>");
 
       try (
