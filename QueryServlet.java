@@ -36,9 +36,16 @@ public class QueryServlet extends HttpServlet {
       ) {
          // Step 3: Execute a SQL SELECT query
          // === Form the SQL command - BEGIN ===
-         String sqlStr = "select * from class101 where type = "
-               + "'" + request.getParameterValues("type") + "'"   // Single-quote SQL string
-               + " and qty > 0 order by price desc";
+         String[] authors = request.getParameterValues("type");  // Returns an array of Strings
+         String sqlStr = "SELECT * FROM class101 WHERE type IN (";
+         for (int i = 0; i < types.length; ++i) {
+            if (i < types.length - 1) {
+               sqlStr += "'" + types[i] + "', ";  // need a commas
+            } else {
+               sqlStr += "'" + types[i] + "'";    // no commas
+            }
+         }
+         sqlStr += ") AND qty > 0 ORDER BY author ASC, title ASC";
          // === Form the SQL command - END ===
 
          out.println("<h3>Thank you for your query.</h3>");
