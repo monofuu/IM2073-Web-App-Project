@@ -49,7 +49,7 @@ public class QueryServlet extends HttpServlet {
          int count = 0;
          while(rset.next()) {
             // Print a paragraph <p>...</p> for each record
-            out.println("<p>" + rset.getString("author")
+            out.println("<p>" + rset.getString("type")
                   + ", " + rset.getString("name") + ", " + rset.getString("breed")
                   + ", $" + rset.getDouble("price") + "</p>");
             count++;
