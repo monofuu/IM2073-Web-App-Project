@@ -83,4 +83,13 @@ body{
     width: 1000px;
     margin: auto;
     padding: 10px 10px;
+    z-index: 1;
+  }
+
+.box_news_title {
+    width: 1000px;
+    height: 200px;
+    margin: auto;
+    padding: 10px 10px;
+    z-index: 1;
   }

@@ -75,3 +75,19 @@ body{
   opacity: 0.8;
   animation: slideIn 5s;
 }
+
+.bg_news {
+  content: "";
+  background: url("http://localhost:9999/petdb/images/pet_news.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 69px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;   
+  opacity: 0.8;
+  background-color: black;
+  z-index: -1;
+  animation: fadeIn_less 2s;
+}  
