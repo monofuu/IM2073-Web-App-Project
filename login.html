@@ -7,6 +7,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="petquerystyle.css">
     <link rel="stylesheet" href= "button.css">
+    <link rel="stylesheet" href="background.css">
     <title>Adoption</title>
 
     <style> 
@@ -31,28 +32,34 @@
         <a href="http://localhost:9999/petdb/login.html">Adoption</a>
         <a href="http://localhost:9999/petdb/AboutUs.html">About Us</a>
     </div>
+    <span class = "bg_com"></span>
 
-    <div class = "box">
-    <h1>Find Your Perfect Com'paw'nion</h1>
-    <h3><p align = "justify">Discover the joy of companionship by exploring our wide range of adoptable animals!
-        Our form allows you to browse through the profiles of available pets seeking their forever homes.
-        Simply check the boxes and embark on a heartwarming journey to find the perfect furry friend who will bring happiness and unconditional love into your life. 
-        Start the adventure of animal adoption with us today!
-    </p></h3>
+    <div class = "box_com_title">
+        <center><p style = "font-size: 80px;"><b>Find Your Perfect Com'paw'nion</b></p></center>
+    </div>
+    <div class = "box_com"><span class="bold_less"><p style = "text-align:justify; font-size: 20px;"><font color="black">
+        Welcome to our adoption hub, where the journey to finding your new furry companion begins. 
+        Here, you can take the first step towards opening your heart and home to a lovable pet without any fuss or complications.
+    <br/><br/>
+    With just a few clicks, you can express your interest in adoption and take the first step towards welcoming a new furry friend into your life. 
+    No lengthy forms or complicated procedures – just a simple, straightforward process that puts you one step closer to finding your perfect com'paw'nion!
+    </font></p></span>
+    </div>
+
+    <div class="box_">
     <br/>
     <p><h3>But first...we need you to login to our website:</h3></p>
-    <br/>
     <form method="get" action="login">
-    <p>Enter your Name: <input type='text' name='cust_name'></p>
-    <p>Enter your Email: <input type='text' name='cust_email'></p>
-    <p>Enter your Password: <input type='text' name='cust_phone'></p>
+    <p>Enter your Username: <input type='text' required name='cust_name'></p>
+    <p>Enter your Password: <input type='text' required name='cust_pass'></p>
     <button class="button" style="vertical-align:middle"><span><input type="submit" value="Login" /></span></button>
     </form>
     <br/><br/>
 
     <p><h3>No account? Click here to sign up now!</h3></p>
-    <form method="get" action="signup"></form>   
-    <input type="reset" value="Sign Up" />
+    <form method="get" action="signup">  
+    <button class="button" style="vertical-align:middle"><span><input type="submit" value="Sign Up" /></span></button>
+    </form>
     </div>
     <br/><br/>
     </div>
