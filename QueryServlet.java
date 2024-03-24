@@ -7,7 +7,7 @@ import jakarta.servlet.annotation.*;
 //import javax.servlet.http.*;
 //import javax.servlet.annotation.*;
 
-@WebServlet("/query")   // Configure the request URL for this servlet (Tomcat 7/Servlet 3.0 upwards)
+@WebServlet("/petquery")   // Configure the request URL for this servlet (Tomcat 7/Servlet 3.0 upwards)
 public class QueryServlet extends HttpServlet {
 
    // The doGet() runs once per HTTP GET request to this servlet.
