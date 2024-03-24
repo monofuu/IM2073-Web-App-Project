@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="petquerystyle.css">
+    <link rel="stylesheet" href= "button.css">
+    <title>Sign Up</title>
+
+    <style> 
+        input[type=button], input[type=submit], input[type=reset] {
+          background-color: #F7DED0;
+          border: none;
+          color: saddlebrown;
+          padding: 5px 10px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a class="active">Paws for Home</a>
+        <a href ="http://localhost:9999/petdb/start.html">Home</a>
+        <a href="http://localhost:9999/petdb/News.html">News</a>
+        <a href="http://localhost:9999/petdb/compawnions.html">Our Compawnions</a>
+        <a href="http://localhost:9999/petdb/login.html">Adoption</a>
+        <a href="http://localhost:9999/petdb/AboutUs.html">About Us</a>
+    </div>
+    <div class = "box">
+    <p><h1>Sign Up</h1></p>
+    <p align = "justify">Unlock exclusive benefits and stay connected with us by signing up today! 
+        Join our vibrant community of pet lovers and gain access to personalized adoption recommendations, 
+        event notifications, and special offers. Signing up is quick and easy, 
+        and it's the first step toward finding your perfect furry companion. 
+        Don't miss out – register now and embark on your journey to make a difference in the lives of animals in need!</p>
+    <br/><br/>
+    <form method="get" action="signup">
+        <p>Enter your Username: <input type='text' required name='cust_name'></p>
+        <p>Enter your email: <input type='text' required name = 'cust_email'></p>
+        <p>Enter your Password: <input type='password' required name='cust_pass' id = 'pass'></p>
+        <p><input type="checkbox" onclick="show_pass()">Show Password</p>
+        <button class="button" style="vertical-align:middle"><span><input type="submit" value="Sign Up"></span></button>
+        </form>
+    </div>
+    <script>
+        function show_pass() {
+          var x = document.getElementById("pass");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        </script>
+        
+</body>
+</html>
+    
+

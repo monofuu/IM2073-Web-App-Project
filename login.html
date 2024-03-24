@@ -51,13 +51,25 @@
     <p><h3>But first...we need you to login to our website:</h3></p>
     <form method="get" action="login">
     <p>Enter your Username: <input type='text' required name='cust_name'></p>
-    <p>Enter your Password: <input type='text' required name='cust_pass'></p>
+    <p>Enter your Password: <input type='password' required name='cust_pass' id = 'pass'></p>
+    <p><input type="checkbox" onclick="show_pass()">Show Password</p>
     <button class="button" style="vertical-align:middle"><span><input type="submit" value="Login" /></span></button>
     </form>
     <br/><br/>
 
+    <script>
+        function show_pass() {
+          var x = document.getElementById("pass");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+    </script>
+
     <p><h3>No account? Click here to sign up now!</h3></p>
-    <form method="get" action="signup">  
+    <form action = "http://localhost:9999/petdb/signup.html">  
     <button class="button" style="vertical-align:middle"><span><input type="submit" value="Sign Up" /></span></button>
     </form>
     </div>
