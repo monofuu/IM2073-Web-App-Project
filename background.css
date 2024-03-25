@@ -133,3 +133,19 @@ body{
   z-index: -1;
   animation: fadeIn_4 2s;
 }
+
+.bg_aboutus {
+  content: "";
+  background: url("http://localhost:9999/petdb/images/aboutuspets.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 69px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;   
+  opacity: 0.8;
+  background-color: black;
+  z-index: -1;
+  animation: fadeIn_8 2s;
+}  
