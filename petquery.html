@@ -6,7 +6,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="petquerystyle.css">
+    <link rel="stylesheet" href="button.css">
     <title>Adoption</title>
+
+    <style> 
+        input[type=button], input[type=submit], input[type=reset] {
+          background-color: #F7DED0;
+          border: none;
+          color: saddlebrown;
+          padding: 5px 10px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,12 +33,13 @@
     </div>
 
     <div class = "box">
+    <br/>
     <h1>Find Your Perfect Com'paw'nion</h1>
-    <h3><p align = "justify">Discover the joy of companionship by exploring our wide range of adoptable animals!
+    <p style = "text-align: justify; font-size: 20px;">Discover the joy of companionship by exploring our wide range of adoptable animals!
         Our form allows you to browse through the profiles of available pets seeking their forever homes.
         Simply check the boxes and embark on a heartwarming journey to find the perfect furry friend who will bring happiness and unconditional love into your life. 
         Start the adventure of animal adoption with us today!
-    </p></h3>
+    </p>
     <br/>
     <form method="get" action="petquery">
     <p><b>Choose your preferred type of pet: </b></p>
@@ -43,8 +57,10 @@
     <p><input type="radio" name="price" value="400" />Less than $400</p>
     <p><input type="radio" name="price" value="500" />Less than $500</p>
     <br/><br/>
-    <input type="submit" value="Next" />
-    <input type="reset" value="Clear" />
+
+    <button class="button" style="vertical-align:middle"><span><input type="submit" value="Next"></span></button>
+
+    <button class="button" style="vertical-align:middle"><span><input type="reset" value="Clear"></span></button>
     <br/><br/>
     </div>
     

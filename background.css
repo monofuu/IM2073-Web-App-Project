@@ -19,6 +19,11 @@ body{
     100% { opacity: 0.4; }
   }
 
+@keyframes fadeIn_5 {
+    0% { opacity: 0; }
+    100% { opacity: 0.5; }
+  }
+
 @keyframes slideIn {
     from {
       transform: translateX(300%); /* Start off-screen to the left */
@@ -100,6 +105,22 @@ body{
 .bg_com {
   content: "";
   background: url("http://localhost:9999/petdb/images/compawnions.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 69px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;   
+  opacity: 0.4;
+  background-color: black;
+  z-index: -1;
+  animation: fadeIn_4 2s;
+}
+
+.bg_compawnions {
+  content: "";
+  background: url("http://localhost:9999/petdb/images/com.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

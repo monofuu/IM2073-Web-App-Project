@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;  
+  }
+
+  section {
+    display: grid;
+    place-items: left;
+    align-content: left;
+    min-height: 30vh;
+
+  }
+
+  .hidden{
+    opacity: 0;
+    transition: all 5s;
+  }
+
+  .show{
+    opacity: 1;
+  }

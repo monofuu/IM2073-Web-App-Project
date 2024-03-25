@@ -63,12 +63,12 @@ body{
     height: 300px;
     margin: auto;
     position: absolute;
-    background: url("http://localhost:9999/petdb/images/animals.jpg");
+    background: url("http://localhost:9999/petdb/images/dog_cat.jpg");
     background-repeat: no-repeat;
     padding: 16px 10px;
-    bottom: -400px;
+    bottom: -300px;
     top: 20;
-    right: 50px;
+    right: 120px;
     animation: slideIn 1.5s;
 }
 
@@ -115,6 +115,15 @@ body{
     z-index: 1;
     animation: fadeIn 2s;
 }
+
+.box_compaw_title {
+    width: 1000px;
+    height: 180px;
+    margin: auto;
+    padding: 10px 10px;
+    z-index: 1;
+    animation: fadeIn 2s;
+  }
 
 .bold_less{
     font-weight: 600;
