@@ -6,12 +6,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="petquerystyle.css">
-
-    <link rel = "stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel = "stylesheet" href="scroll_com.css">
     <script defer src = "scollanimate.js"></script>
 </head>
 
 <title> Our Compawnions</title>
+<style>
+    /* Style for the image */
+    img {
+        float: left; /* Float the image to the left */
+        margin-right: 20px; /* Add some space between the image and text */
+    }
+</style>
 <body>
     <div class="nav">
         <a class="active">Paws for Home</a>
@@ -22,25 +29,66 @@
         <a href="http://localhost:9999/petdb/AboutUs.html">About Us</a>
     </div>
 
-    <div class = "box">
-    <h1><b>Our Com'paw'nions</b></h1>
-    <section class ="hidden">
-        <h3><p>Each pet has its own story to tell and is eagerly awaiting the chance to join a loving family. 
+    <span class = "bg_compawnions"></span>
+    <div class = "box_compaw_title">
+        <center><p style = "font-size: 85px;"><b>Our Com'paw'nions</b></p></center>
+    </div>
+    <div class = "box_com"><span class="bold_less"><p style = "text-align:justify; font-size: 20px;">
+            Each pet has its own story to tell and is eagerly awaiting the chance to join a loving family. 
             Whether you're looking for a loyal canine companion to join you on adventures, 
             a cuddly feline friend to curl up with on the couch, 
             a hoppy bunny to bring joy to your home, a cheerful hamster to brighten your day, 
-            or a feathered friend to serenade you with songs, we have the perfect match waiting for you.</p>
-       
-            <p>Browse through the images of our adorable pets and discover the joy and fulfillment 
+            or a feathered friend to serenade you with songs, we have the perfect match waiting for you.
+       <br/><br/>
+            Browse through the images of our adorable pets and discover the joy and fulfillment 
             that comes from adopting a furry friend. 
             These precious animals will fill your life with unconditional love, 
-            laughter, and companionship. Don't wait any longer – come meet your new best friend today!"</p></h3>
-    </section>
+            laughter, and companionship. Don't wait any longer – come meet your new best friend today!"
+        </font></p></span>
+    </div>
 
     <section class = "hidden">
+        <div class = "box_"><h3>Here are our fellow residents in our shelter, eagerly waiting for their new home: </h3>
+        </div>
+    </section>
+    <section class = "hidden">
+        <div class = "box_">
+            <p style = "text-align:justify; font-size: 40px;">Dogs</p>
+        </div>
+    </section>
+    <section class = "hidden">
+        <div class = "box_">
+            <img src="http://localhost:9999/petdb/images/corgi.jpg" alt="macaroni" width = "450" height="280">
+            <p style = "font-size:20px">Name: Macaroni</p>
+            <p style = "font-size: 20px;">Species: Corgi</p>
+            <p style = "font-size: 20px;">Adoption Fee: $420.00</p>
+        </div>
+    </section>
+    <br/>
+    <section class = "hidden">
+        <div class = "box_">
+            <img src="http://localhost:9999/petdb/images/pomeranian.jpg" alt="cheese" width = "450" height="280">
+            <p style  = "font-size:20px">Name: Cheese</p>
+            <p style="font-size: 20px;">Species: Pomeranian</p>
+            <p style="font-size: 20px;">Adoption Fee: $460.00</p>
+        </div>
+    </section>
+    <br/>
+    <section class = "hidden">
+        <div class = "box_">
+            <img src="http://localhost:9999/petdb/images/beagle.jpg" alt="matcha" width = "450" height="280">
+            <p style  = "font-size:20px">Name: Matcha</p>
+            <p style="font-size: 20px;">Species: Beagle</p>
+            <p style="font-size: 20px;">Adoption Fee: $470.00</p>
+        </div>
+    </section>
+    <br/>
 
+    <section class = "hidden">
+        <div class = "box_">
+            <p style = "text-align:justify; font-size: 40px;">Cats</p>
+        </div>
     </section>
 
-    </div>
 </body>
 </html>
