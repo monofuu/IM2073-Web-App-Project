@@ -8,7 +8,6 @@ import jakarta.servlet.annotation.*;
 @WebServlet("/adoptionqueryresults")   
 public class OrderFormServlet extends HttpServlet {
 
-   // The doGet() runs once per HTTP GET request to this servlet.
    @Override
    public void doGet(HttpServletRequest request, HttpServletResponse response)
                throws ServletException, IOException {
@@ -42,7 +41,7 @@ public class OrderFormServlet extends HttpServlet {
          ResultSet rset = stmt.executeQuery(sqlStr);  // Send the query to the server
 
          // Step 4: Process the query result set
-         out.println("<form method='get' action='eshoporder'>");
+         out.println("<form method='get' action='petadopt'>");
          
          while(rset.next()) {
             out.println("<p><input type='checkbox' name='id' value="
@@ -53,7 +52,7 @@ public class OrderFormServlet extends HttpServlet {
          }
  
          // Print the submit button and </form> end-tag
-         out.println("<p><input type='submit' value='ORDER' />");
+         out.println("<p><input type='submit' value='Adopt Now!' />");
          out.println("</form>");
 
       } catch(SQLException ex) {
