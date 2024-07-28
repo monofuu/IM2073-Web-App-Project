@@ -33,7 +33,7 @@ public class OrderFormServlet extends HttpServlet {
          Statement stmt = conn.createStatement();
       ) {
          // Step 3: Execute a SQL SELECT query
-         String sqlStr = "select * from class101 where type = "
+         String sqlStr = "select * from pets where type = "
                + "'" + request.getParameterValues("type") + "'"   // Single-quote SQL string
                + " and qty > 0 order by price desc";
 
