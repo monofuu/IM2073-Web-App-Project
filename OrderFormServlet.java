@@ -1,14 +1,11 @@
-// To save as "ebookshop\WEB-INF\classes\QueryServlet.java".
+
 import java.io.*;
 import java.sql.*;
-import jakarta.servlet.*;            // Tomcat 10
+import jakarta.servlet.*;            
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
-//import javax.servlet.*;            // Tomcat 9
-//import javax.servlet.http.*;
-//import javax.servlet.annotation.*;
 
-@WebServlet("/adoptionqueryresults")   // Configure the request URL for this servlet (Tomcat 7/Servlet 3.0 upwards)
+@WebServlet("/adoptionqueryresults")   
 public class OrderFormServlet extends HttpServlet {
 
    // The doGet() runs once per HTTP GET request to this servlet.
@@ -36,11 +33,9 @@ public class OrderFormServlet extends HttpServlet {
          Statement stmt = conn.createStatement();
       ) {
          // Step 3: Execute a SQL SELECT query
-         // === Form the SQL command - BEGIN ===
          String sqlStr = "select * from class101 where type = "
                + "'" + request.getParameterValues("type") + "'"   // Single-quote SQL string
                + " and qty > 0 order by price desc";
-         // === Form the SQL command - END ===
 
          out.println("<h3>Thank you for your query.</h3>");
          out.println("<p>Your SQL statement is: " + sqlStr + "</p>"); // Echo for debugging
@@ -49,7 +44,6 @@ public class OrderFormServlet extends HttpServlet {
          // Step 4: Process the query result set
          out.println("<form method='get' action='eshoporder'>");
          
-         // For each row in ResultSet, print one checkbox inside the <form>
          while(rset.next()) {
             out.println("<p><input type='checkbox' name='id' value="
                   + "'" + rset.getString("id") + "' />"
@@ -61,12 +55,12 @@ public class OrderFormServlet extends HttpServlet {
          // Print the submit button and </form> end-tag
          out.println("<p><input type='submit' value='ORDER' />");
          out.println("</form>");
-         // === Step 4 ends HERE - Do NOT delete the following codes ===
+
       } catch(SQLException ex) {
          out.println("<p>Error: " + ex.getMessage() + "</p>");
          out.println("<p>Check Tomcat console for details.</p>");
          ex.printStackTrace();
-      }  // Step 5: Close conn and stmt - Done automatically by try-with-resources (JDK 7)
+      } 
  
       out.println("</body></html>");
       out.close();
