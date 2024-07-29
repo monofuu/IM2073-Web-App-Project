@@ -30,7 +30,7 @@ public class QueryServlet extends HttpServlet {
          Statement stmt = conn.createStatement();
       ) {
          String[] authors = request.getParameterValues("type");  // Returns an array of Strings
-         String sqlStr = "SELECT * FROM petdb WHERE type IN (";
+         String sqlStr = "SELECT * FROM pets WHERE type IN (";
          for (int i = 0; i < types.length; ++i) {
             if (i < types.length - 1) {
                sqlStr += "'" + types[i] + "', ";  // need a commas
